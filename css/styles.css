@@ -57,7 +57,10 @@ button {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
+.retreat-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 /* =========header-section========= */
 .page-header {
     padding-top: 24px;
@@ -84,7 +87,6 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-dark-color);
-
     margin-right: 76px;
 }
 .span-logo {
@@ -136,14 +138,18 @@ button {
 /* =========hero-section========= */
 .hero {
     background: var(--main-dark-color);
+    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 .main-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     color: var(--main-white-color);
-
+    margin-bottom: 48px;
 }
+
 .main-button {
     font-weight: 500;
     font-size: 16px;
@@ -151,6 +157,14 @@ button {
     letter-spacing: 0.04em;
     color: var(--main-white-color);
     background: var(--main-blue-color);
+    
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 32px;
+    padding-left: 32px;
+
+    border-radius: 4px;
+    border: 1px solid #000000;
 }
 .main-button:hover,
 .main-button:focus {
@@ -165,9 +179,13 @@ button {
     color: var(--main-dark-color);
 }
 .goal-text {
-
     font-size: 16px;
     line-height: 1.5;
+}
+.goal-list {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
 }
 
 /* =========services-section========= */
