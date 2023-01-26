@@ -57,23 +57,19 @@ button {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.retreat-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
+
 /* =========header-section========= */
 .page-header {
+    align-items: center;
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid #E7E9FC;
 }
 .page-header-container {
     display: flex;
-    align-items: center;
 }
 .menu-list {
     display: flex;
-    align-items: center;
 }
 .contacts-list {
     display: flex;
@@ -172,61 +168,93 @@ button {
 }
 
 /* =========goal-section========= */
+.goal-retreat {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.goal-list {
+    display: flex;
+    justify-content: space-between; 
+}
+.goal-item {
+    max-width: 264px;
+}
 .goal-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: var(--main-dark-color);
+    margin-bottom: 8px;
 }
 .goal-text {
+    
     font-size: 16px;
     line-height: 1.5;
 }
-.goal-list {
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
-}
-
 /* =========services-section========= */
+.services {
+    text-align: center;
+    padding-bottom: 120px;
+}
 .services-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
-    color: var(--main-dark-color)
+    color: var(--main-dark-color);
+    margin-bottom: 72px;
+}
+.services-list {
+    display: flex;
+    justify-content: space-between; 
+}
+.services-item {
+    border: 1px solid #E7E9FC;
 }
 .services-img {
-    width: 360px;
-    height: 300px;
+    max-width: 360px;
+    max-height: 300px; 
 }
 
 /* =========team-section========= */
 .team {
+    text-align: center;
     background: var(--main-light-color);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
     color: var(--main-dark-color);
+    margin-bottom: 72px;
+}
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 .team-item {
     background: var(--main-white-color);
+    /* flex-basis: calc((100%-72px) / 4); */
 }
 .team-img {
-    width: 264px;
-    height: 260px;
+    /* max-width: 264px;
+    max-height: 260px; */
+    margin-bottom: 32px;
 }
 .team-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: var(--main-dark-color);
+    margin-bottom: 8px;
 }
 .team-text {
     font-size: 16px;
     line-height: 1.5;
     color: var(--main-color);
+    margin-bottom: 8px;
 }
 
 /* =========footer========= */
@@ -261,8 +289,8 @@ button {
 
 /* =========porfolio-img========= */
 .portfolio-img {
-    width: 360px;
-    height: 300px;
+    max-width: 360px;
+    max-height: 300px;
 }
 .portfolio-title {
     font-weight: 500;
