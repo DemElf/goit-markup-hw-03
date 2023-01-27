@@ -26,6 +26,8 @@ ul {
 }
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 button {
     cursor: pointer;
@@ -236,8 +238,8 @@ button {
     background: var(--main-white-color);
     flex-basis: calc((100% - 72px) / 4);
 }
-.team-img {
-    margin-bottom: 32px;
+.team-name-text {
+    padding: 32px 16px;
 }
 .team-name {
     font-weight: 500;
